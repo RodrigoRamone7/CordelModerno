@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-cordel: 'Indie Flower', Arial, Verdana, Helvetica, sans-serif;
+    --fonte-poema: 'Caveat', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-width: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-image: linear-gradient(to bottom, black, rgb(24 24 24), rgb(70 70 70) , rgb(131 131 131), white);
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+}
+
+header > h1{
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-family: var(--fonte-cordel);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 30px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+    font-family: var(--fonte-poema);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(80, 80, 80);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.705);
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.404);
+    text-shadow: 3px 2px 3px black;
+    box-shadow: 3px 3px 8px black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
