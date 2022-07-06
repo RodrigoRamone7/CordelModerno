@@ -100,5 +100,6 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    font-size: 0.8em;
+    padding: 5px;
 }
